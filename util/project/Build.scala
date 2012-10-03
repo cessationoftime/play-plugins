@@ -22,7 +22,7 @@ object MinimalBuild extends Build {
     },
     organization := "com.typesafe",
     resolvers ++= Seq(
-        Resolver.file("Local Play Repository", file("c:/Users/cvanvranken/gits/Play20/repository/local"))(Resolver.ivyStylePatterns),
+        Resolver.file("Local Play Repository", file("../Play20/repository/local"))(Resolver.ivyStylePatterns),
         repo
     ),
     javacOptions += "-Xlint:unchecked",

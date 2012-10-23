@@ -11,7 +11,7 @@ object MinimalBuild extends Build {
   lazy val repo = if (buildVersion.endsWith("SNAPSHOT")) typesafeSnapshot else typesafe  
 
   lazy val root = Project(id = "play-plugins-mailer", base = file("."), settings = Project.defaultSettings).settings(
-    scalaVersion := "2.10.0-M7",
+    scalaVersion := "2.10.0-RC1",
     version := buildVersion,
     publishTo <<= (version) { version: String =>
                 val nexus = "http://repo.typesafe.com/typesafe/"
